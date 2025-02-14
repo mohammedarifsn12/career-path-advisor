@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import joblib
 import numpy as np
-from sklearn.neighbors import NearestNeighbors
 from sklearn.preprocessing import MinMaxScaler
 
 # Load model and vectorizer
@@ -45,11 +44,17 @@ if st.button("Analyze My Skills"):
         st.warning("⚠️ Please select at least one skill before proceeding!")
     else:
         # **Step 1: Convert user input into a full skill vector**
-        all_skills = sum(skill_categories.values(), [])  # List of all possible skills
-        user_vector = [user_ratings.get(skill, 0) for skill in all_skills]  # Assign 0 to unselected skills
+        all_skills = vectorizer.get_feature_names_out()  # Get all features from training
+        user_vector = np.zeros(len(all_skills))  # Initialize with zeros
+
+        # Assign ratings to selected skills
+        for skill in selected_skills:
+            if skill in all_skills:
+                index = list(all_skills).index(skill)
+                user_vector[index] = user_ratings[skill]
 
         # **Step 2: Reshape and scale the user input**
-        user_vector = np.array(user_vector).reshape(1, -1)  # Convert to 2D array
+        user_vector = user_vector.reshape(1, -1)  # Convert to 2D array
         scaler = MinMaxScaler()
         user_vector_scaled = scaler.fit_transform(user_vector)
 
@@ -85,5 +90,6 @@ if st.button("Analyze My Skills"):
 # Sidebar - About the App
 st.sidebar.header("About This App")
 st.sidebar.info("This AI-powered advisor helps users identify the best career based on their skill ratings and provides learning resources to enhance their expertise.")
+
 
 
