@@ -1,0 +1,11 @@
+Career,Description,Skills,Course_Link,Book,Certification
+Data Analyst,Analyzes data to extract insights.,"SQL, Python, Excel, Statistics",https://www.coursera.org/specializations/data-analysis,Data Science for Business,Google Data Analytics Certificate
+AI Engineer,Develops AI models & deep learning systems.,"Machine Learning, Deep Learning, Python",https://www.coursera.org/specializations/deep-learning,"Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow",TensorFlow Developer Certificate
+Software Developer,Codes & develops applications.,"Java, Python, JavaScript",https://cs50.harvard.edu/,Clean Code by Robert C. Martin,AWS Certified Developer - Associate
+Cybersecurity Analyst,Protects systems from cyber threats.,"Networking, Security, Ethical Hacking",https://www.udemy.com/course/the-complete-ethical-hacking-course/,The Web Application Hacker's Handbook,Certified Ethical Hacker (CEH)
+Digital Marketer,Uses online strategies for brand growth.,"SEO, SEM, Social Media Marketing",https://www.coursera.org/specializations/digital-marketing,Digital Marketing for Dummies,HubSpot Content Marketing Certification
+Cloud Engineer,Manages cloud infrastructure.,"AWS, Azure, Docker, Kubernetes",https://www.udemy.com/course/aws-certified-solutions-architect-associate/,"Cloud Computing: Concepts, Technology & Architecture",AWS Certified Solutions Architect
+UI/UX Designer,Designs user-friendly digital experiences.,"Figma, Adobe XD, User Research",https://www.udemy.com/course/ui-ux-design-with-adobe-xd/,Don't Make Me Think by Steve Krug,Google UX Design Certificate
+Business Analyst,Analyzes business problems & suggests solutions.,"Business Strategy, Excel, SQL",https://www.coursera.org/specializations/business-analytics,Business Analysis Techniques,IIBA Certified Business Analysis Professional
+DevOps Engineer,Automates software deployment & infrastructure.,"CI/CD, Docker, Kubernetes, Linux",https://www.udemy.com/course/devops-tutorial/,The DevOps Handbook,Docker Certified Associate (DCA)
+Full Stack Developer,Builds both front-end & back-end of applications.,"React, Node.js, SQL, MongoDB",https://www.udemy.com/course/the-complete-web-development-bootcamp/,Eloquent JavaScript by Marijn Haverbeke,Full Stack Web Developer Nanodegree (Udacity)
